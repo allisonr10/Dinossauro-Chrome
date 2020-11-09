@@ -1,9 +1,13 @@
+body {
+  background: #fafafa;
+}
+
 /* Dinossauro*/
 
 .dino {
   width: 60px;
   height: 60px;
-  background-color: chartreuse;
+  background-image: url(imagens/dino.png);
   position: absolute;
   bottom: 0;
 }
@@ -15,5 +19,38 @@
   width: 60px;
   height: 60px;
   bottom: 0;
-  background: chocolate;
+  background-image: url(imagens/cactus.png)
+}
+
+/*tela de fim de jogo*/
+
+.game-over {
+  text-align: center;
+  color: #666666;
+  margin-top: 50px;
+  font-family: arial;
+}
+
+/*Animação*/
+
+@keyframes rolarDireita {
+  from {
+    background-position: 70000%;
+  }
+
+  to {
+    background-position: 0%;
+  }
+}
+
+/*Tela do fundo*/
+
+.background {
+  position: absolute;
+  bottom: 0px;
+  background-image: url(imagens/background.png);
+  background-repeat: repeat-x;
+  animation: rolarDireita 600s infinite linear;
+  width: 100%;
+  height: 200px;
 }
