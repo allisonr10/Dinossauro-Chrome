@@ -7,3 +7,13 @@
   position: absolute;
   bottom: 0;
 }
+
+/*Cactos*/
+
+.cacto {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  bottom: 0;
+  background: chocolate;
+}
